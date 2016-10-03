@@ -1,0 +1,7 @@
+#Oject files
+.obj
+.o
+
+#Executable files
+.out
+.exe
