@@ -5,15 +5,12 @@
  */
 #include <iostream>
 #include <vector>
-#include <sys/timeb.h>
 using namespace std;
 
 //色子的个数
 int n;
 //结果记录集
 vector<vector<int>> res; 
-//计时器
- struct timeb time_start, time_end;
 
 void dfs(vector<int> path, int level)
 {
@@ -51,9 +48,7 @@ int main(void)
 	while(cin >> n){
 		res.clear();
 		vector<int> path;
-		ftime(&time_start);
 		dfs(path, 0);
-		ftime(&time_end);
 		printResult();
 	}
 	return 0;
